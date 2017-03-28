@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "993552484111",
+    "firebase_url": "https://shop-smart-e4049.firebaseio.com",
+    "project_id": "shop-smart-e4049",
+    "storage_bucket": "shop-smart-e4049.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993552484111:android:f515085f01f20f86",
+        "android_client_info": {
+          "package_name": "com.example.admin.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993552484111-ircn6rq8mgd5rod3nm1degs5itl5e37h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.myapplication",
+            "certificate_hash": "1e81ba8a49639a9d361f45f9733ddc307878b29f"
+          }
+        },
+        {
+          "client_id": "993552484111-5vqsf5trtkt4n2nphv4eqv2if0a7mbc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.myapplication",
+            "certificate_hash": "cceadd73dbd7f4bdf03619f447599c051865175d"
+          }
+        },
+        {
+          "client_id": "993552484111-6r2fsm4hqt6j3d4r7m41jphk3g80bm0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnOUV4odSrX2N2KFdbZzcT0lkL56sHIC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993552484111-6r2fsm4hqt6j3d4r7m41jphk3g80bm0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993552484111:android:e15cdbdc58b3a629",
+        "android_client_info": {
+          "package_name": "com.example.admin.shopsmartclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993552484111-qnd9q8t0pts73dla625kvugipsbievif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.shopsmartclient",
+            "certificate_hash": "3a661fd2bbecb0bd30efd1537b3dd840e4e7a158"
+          }
+        },
+        {
+          "client_id": "993552484111-6r2fsm4hqt6j3d4r7m41jphk3g80bm0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnOUV4odSrX2N2KFdbZzcT0lkL56sHIC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993552484111-6r2fsm4hqt6j3d4r7m41jphk3g80bm0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#0097A7"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smarthealth2"/>
+
+    <TextView
+        android:id="@+id/splash_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="welcome"/>
+    <TextView
+        android:id="@+id/splash_message_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_welcome"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_centerHorizontal="true"
+        android:text="..we are here to make your shopping simple.."/>
+    <TextView
+        android:id="@+id/splash_message_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_message_one"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_centerHorizontal="true"
+        android:text="shop smart has arrived!"/>
+
+</LinearLayout>
