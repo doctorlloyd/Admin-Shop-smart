@@ -127,7 +127,7 @@ public class Item_Registration extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+//        super.onBackPressed();
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setCancelable(false);
         dialog.setTitle("You're about to logout..");

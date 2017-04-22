@@ -34,10 +34,6 @@ import com.google.firebase.storage.UploadTask;
 
 import static android.app.Activity.RESULT_OK;
 
-/**
- * Created by Doc on 2017/02/21.
- */
-
 public class ShopRegistration extends Fragment{
 
     public static String TAG = ClothingRegistration.class.getSimpleName();
@@ -45,7 +41,7 @@ public class ShopRegistration extends Fragment{
     private Spinner spinner;
     private EditText etName, etAddress, etContact, etConfirmPassword;
     private EditText etEmail, etPassword;
-    private Button btnCancel, btnSignUp;
+    private Button btnSignUp;
     private FirebaseUser user;
     private String uid;
     private static final int GALLERY_INTENT = 1;
@@ -103,12 +99,6 @@ public class ShopRegistration extends Fragment{
             @Override
             public void onClick(View view) {
                 createAccount(etEmail.getText().toString(), etPassword.getText().toString());
-            }
-        });
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signOut();
             }
         });
         imageButton.setOnClickListener(new View.OnClickListener() {
@@ -174,8 +164,6 @@ public class ShopRegistration extends Fragment{
                                         databaseReference.child(_key).setValue(shop);
 
                                         Intent intent = new Intent(getActivity(), Item_Registration.class);
-//                                        intent.putExtra("fragment_category", _category);
-//                                        intent.putExtra("shop_name", shop);
                                         startActivity(intent);
                                         getActivity().finish();
                                     } else {
@@ -241,7 +229,6 @@ public class ShopRegistration extends Fragment{
         etConfirmPassword = (EditText) view.findViewById(R.id.etShopConfirmPassword);
         spinner = (Spinner) view.findViewById(R.id.spShopCategory);
         btnSignUp = (Button) view.findViewById(R.id.shopSignUp);
-        btnCancel = (Button) view.findViewById(R.id.shopSendVerification);
         imageButton = (ImageButton) view.findViewById(R.id.imgb_Shop);
     }
 
@@ -253,6 +240,5 @@ public class ShopRegistration extends Fragment{
             imageUri = data.getData();
             imageButton.setImageURI(imageUri);
         }
-
     }
 }

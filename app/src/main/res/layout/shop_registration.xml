@@ -66,7 +66,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Address or Location"
-                android:inputType="textEmailAddress" />
+                android:inputType="textPostalAddress" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -128,6 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+            android:textColor="#009688"
                 android:text="Category"/>
             <Spinner
                 android:id="@+id/spShopCategory"
@@ -149,7 +150,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="46dp"
                 android:gravity="center"
-                android:textColor="#000000"
                 android:text="Upload Shop logo" />
         </FrameLayout>
         <LinearLayout
@@ -160,26 +160,13 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/shopSignUp"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/sign_up_edit_style"
+                android:layout_margin="16dp"
+                android:background="@drawable/my_buttons"
                 android:elevation="12dp"
-                android:layout_marginRight="12dp"
-                android:text="  sign up  "
-                android:textColor="#000000" />
-            <Button
-                android:id="@+id/shopSendVerification"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/sign_up_edit_style"
-                android:elevation="12dp"
-                android:layout_marginLeft="12dp"
-                android:text="Cancel"
-                android:textColor="#F44336"/>
+                android:text="sign up"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

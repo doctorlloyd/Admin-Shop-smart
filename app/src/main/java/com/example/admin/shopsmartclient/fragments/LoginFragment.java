@@ -62,10 +62,11 @@ public class LoginFragment extends Fragment{
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!TextUtils.isEmpty(etEmail.getText().toString())&&!TextUtils.isEmpty(etPassword.getText().toString()))
-                {
-                    signIn(etEmail.getText().toString(),etPassword.getText().toString());
-                }
+                signIn(etEmail.getText().toString(),etPassword.getText().toString());
+//                if(!TextUtils.isEmpty(etEmail.getText().toString())&&!TextUtils.isEmpty(etPassword.getText().toString()))
+//                {
+//                    signIn(etEmail.getText().toString(),etPassword.getText().toString());
+//                }
             }
         });
         return rootView;
@@ -101,12 +102,11 @@ public class LoginFragment extends Fragment{
     }
 
     private boolean validateForm() {
-        boolean valid = true;
 
         String email = etEmail.getText().toString();
         if (TextUtils.isEmpty(email)) {
             etEmail.setError("Required.");
-            valid = false;
+            return false;
         } else {
             etEmail.setError(null);
         }
@@ -114,12 +114,12 @@ public class LoginFragment extends Fragment{
         String password = etPassword.getText().toString();
         if (TextUtils.isEmpty(password)) {
             etPassword.setError("Required.");
-            valid = false;
+            return false;
         } else {
             etPassword.setError(null);
         }
 
-        return valid;
+        return true;
     }
 
     // [START on_start_add_listener]

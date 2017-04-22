@@ -35,7 +35,6 @@ public class ShopRegisterOrLogin extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setCancelable(false);
         dialog.setTitle("You're about to Exit App..");
@@ -74,10 +73,13 @@ public class ShopRegisterOrLogin extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.action_theme_dark:
-                setTheme(R.style.AppBarOverlay);
+                setTheme(R.style.AppThemeDark);
                 break;
             case R.id.action_theme_light:
-                setTheme(R.style.PopupOverlay);
+                setTheme(R.style.AppTheme);
+                break;
+            case R.id.action_exit_app:
+                System.exit(0);
                 break;
             default:
                 break;
